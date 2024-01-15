@@ -16,7 +16,7 @@ Assurez-vous d'avoir [Composer](https://getcomposer.org/) installé. Ensuite, ex
 
 ```bash
 composer require symfony/http-foundation.
-
+```
 ## 2. Utilisation
 
 Le composant `symfony/http-foundation` offre deux classes principales, `Request` et `Response`, qui facilitent la manipulation des données de requête et la génération de réponses HTTP.
@@ -41,7 +41,7 @@ $parametrePost = $request->request->get('nom_du_parametre_post');
 $enTete = $request->headers->get('nom_de_l_entete');
 
 // Plus d'utilisations possibles...
-
+```
 ### 2.2 Response
 
 La classe `Response` permet de générer des réponses HTTP avec différents statuts, en-têtes et contenus. Elle est utilisée pour renvoyer des réponses aux clients.
@@ -57,3 +57,4 @@ $response = new Response('Contenu de la réponse', Response::HTTP_OK);
 $response->headers->set('Nom_de_l_entete', 'Valeur_de_l_entete');
 
 // Plus d'utilisations possibles...
+```
